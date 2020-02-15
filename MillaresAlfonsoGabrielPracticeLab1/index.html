@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Event</title>
+
+    <link rel="stylesheet" href="css/form-validation.css">
+	<script src = "js/form-validation.js"></script>
+</head>
+<body>
+    <div id="formCont">
+        <form>
+            <table id="formTable">
+                <tr>
+                    <td><label for="eTypeID">Event Type:</label></td>
+                    <td>
+                        <select name="eType" id="eTypeID" required>
+                            <option selected disabled hidden value="">Choose One</option>
+                            <option value="type1">Type 1</option>
+                            <option value="type2">Type 2</option>
+                            <option value="type3">Type 3</option>
+                            <option value="type4">Type 4</option>
+                        </select>                   
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="eTitleID">Event Title:</label></td>
+                    <td><input type="text" name="eTitle" id="eTitleID" required></td>
+                </tr>
+
+                <tr>
+                    <td>Event Dates:</td>
+                    <td><input type="date" name="eDate1" id="eDate1ID" required> to <input type="date" name="eDate2" id="eDate2ID" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="pDateID">Posting Dates:</label></td>
+                    <td><input type="date" name="pDate" id="pDateID" required></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="chck1" id="chck1ID"><label for="chck1">Is Registration Required?</label>  <br>
+                        <input type="checkbox" name="chck2" id="chck2ID"><label for="chck2">Is this event associated with any Family Programs?</label>  <br>
+                        <input type="checkbox" name="chck3" id="chck3ID"><label for="chck3">Upon Registration Completion, Are Users to Receive an Auto Generated Email</label>  <br>
+                        <input type="checkbox" name="chck4" id="chck4ID"><label for="chck4">Is There a Point of Contact?</label>  <br>
+                        <input type="checkbox" name="chck5" id="chck5ID"><label for="chck5">Is There a Hosting Command Point of Contact?</label>  <br>                
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                        <div id="btnDiv"><input type="submit" value="Save" id="btn" id="btn"> <input type="reset" value="Cancel" id="btn"></div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
